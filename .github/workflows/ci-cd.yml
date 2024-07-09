@@ -26,5 +26,5 @@ jobs:
       - name: Serve application locally
         run: |
           npm install -g serve@14.2.3
-          serve -s build
+           serve -s build -l 3000
 
