@@ -30,7 +30,7 @@ jobs:
 
       - name: Check server status
         run: |
-          sleep 5  # Wait for server to start (adjust time if needed)
+          sleep 5  
           curl -I http://localhost:3000  # Check server headers
 
       # Additional steps like running tests or post-deployment cleanup can go here
