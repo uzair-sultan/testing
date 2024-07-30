@@ -23,14 +23,5 @@ jobs:
       - name: Build application
         run: yarn build
 
-      - name: Serve application locally
-        run: |
-          npm install -g serve@14.2.3
-          serve -s build -l 5000
-
-      - name: Check server status
-        run: |
-          sleep 5  
-          curl -I http://localhost:3000  # Check server headers
-
-      # Additional steps like running tests or post-deployment cleanup can go here
+      - name: Yarn Start
+        run: yarn start
